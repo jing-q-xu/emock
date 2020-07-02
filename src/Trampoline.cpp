@@ -24,7 +24,8 @@
     #include <sys/mman.h>
     #include <inttypes.h>
     #include <stdio.h>
-    #include <linux/limits.h>
+//    #include <linux/limits.h>
+    #include "sys/syslimits.h"
 
 #endif
 

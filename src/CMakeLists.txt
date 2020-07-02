@@ -1,5 +1,5 @@
 
-SET(EMOCK_SRC_ROOT ${CMAKE_SOURCE_DIR})
+SET(EMOCK_SRC_ROOT ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 IF(NOT DEFINED EMOCK_XUNIT)
    SET(EMOCK_XUNIT STDEXCEPT)
@@ -189,7 +189,7 @@ ELSE(MSVC)
    SET(EMOCK_SRCS 
        ${EMOCK_SRCS} 
        UnixCodeModifier.cpp
-   )
+           ../include/elf.h)
 ENDIF(MSVC)
 ######################################################
 SET(EMOCK_HEADERS_PATH ${EMOCK_SRC_ROOT}/include/emock)

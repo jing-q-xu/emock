@@ -27,12 +27,15 @@
 	#include <sys/mman.h>
 	#include <sys/stat.h>
 	#include <fcntl.h>
-	#include <link.h>
+//	#include <link.h>
 	#include <string.h>
 	#include <unistd.h>
 	#include <cassert>
 	#include <stdio.h>
-    #include <linux/limits.h>
+//    #include <linux/limits.h>
+    #include "sys/syslimits.h"
+    #include "elf.h"
+    #include <dlfcn.h>
 
 #endif
 
